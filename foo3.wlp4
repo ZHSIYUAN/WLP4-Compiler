@@ -1,0 +1,14 @@
+nt foo() {
+  int local = 99;
+  return 62 + local;
+}
+
+int bar() {
+  int local = 8;
+  return local - foo();
+}
+
+int wain(int *a, int b){ 
+  int local = 5;
+  return foo() + bar() + 5;
+}
